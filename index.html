@@ -16,21 +16,38 @@
         </div>
       </div>
 
-      <img class="wrapAround" src="img/pig-dice.jpg" alt="an imge of pig-dice" style="width:86%;height:250px;">
+      <h3>Turn:<span class="whosturn"></span></h3>
+
+      <img class="wrapAround" src="img/pig-dice.jpg" alt="an imge of pig-dice" style="width:85%;height:250px;">
+
       <div id="buttons">
-        <button id="submit" class="btn btn-success">Roll</button><br><br>
-        <button id="submit" class="btn btn-danger">Hold</button><br><br>
+        <form id = "roll">
+          <button type="submit" class="btn btn-success">Roll</button><br><br>
+        </form>
+        <form id="hold">
+          <button type="submit" class="btn btn-danger">Hold</button><br><br>
+        </form>
       </div>
 
       <div class="row">
         <div class="col-md-6">
           <blockquote class="bg-info">
-            <h2>Player One:</h2>
+            <h2>Player One:<span class="name-1"></span></h2>
+            <div class="player-one">
+              <p>Total Score:<span class="bankscore-0"></span></p>
+              <p>Turn Score:<span class="turnscore-0"></span></p>
+              <p>Dice:<span class="dicevalue-0"></span></p>
+           </div>
           </blockquote>
         </div>
         <div class="col-md-6">
           <blockquote class ="bg-info">
-            <h2>Player Two:</h2>
+            <h2>Player Two:<span class="name-one"></span></h2>
+            <div class="player-two">
+              <p>Total Score:<span class="bankscore-1"></span></p>
+              <p>Turn Score:<span class="turnscore-1"></span></p>
+              <p>Dice:<span class="dicevalue-1"></span></p>
+            </div>
           </blockquote>
         </div>
       </div>
